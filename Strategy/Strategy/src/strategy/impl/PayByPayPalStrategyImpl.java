@@ -1,3 +1,7 @@
+package strategy.impl;
+
+import strategy.PaymentMethodStrategy;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

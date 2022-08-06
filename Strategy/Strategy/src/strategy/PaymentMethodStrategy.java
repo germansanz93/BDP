@@ -1,3 +1,5 @@
+package strategy;
+
 /**
  * Interfaz comun a todas las estrategias
  * */

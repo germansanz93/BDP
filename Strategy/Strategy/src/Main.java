@@ -1,3 +1,8 @@
+import client.Order;
+import strategy.impl.PayByCreditCardStrategyImpl;
+import strategy.impl.PayByPayPalStrategyImpl;
+import strategy.PaymentMethodStrategy;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

@@ -1,3 +1,7 @@
+package client;
+
+import strategy.PaymentMethodStrategy;
+
 /**
  * Clase orden. La orden no sabe el metodo concreto de pago (strategy) que el usuario seleccionara. Se utiliza una
  * interfaz para delegar la recoleccion de los datos del pago al objeto strategy.

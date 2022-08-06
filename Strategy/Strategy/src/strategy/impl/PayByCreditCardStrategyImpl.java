@@ -1,11 +1,14 @@
-import java.io.IOException;
+package strategy.impl;
+
+import strategy.PaymentMethodStrategy;
+
 import java.util.Scanner;
 
 /**
  * Implementacion de la estrategia para el metodo de pago de tarjeta de credito
  * */
 
-public class PayByCreditCardStrategyImpl implements PaymentMethodStrategy{
+public class PayByCreditCardStrategyImpl implements PaymentMethodStrategy {
     private final Scanner input = new Scanner(System.in);
     private CreditCard card;
 
