@@ -1,10 +1,15 @@
-public class LockedState implements State{
+package state.impl;
+
+import client.Player;
+import state.State;
+
+public class LockedState implements State {
 
     private static final String LOCKED = "Locked...";
     private Player player;
 
     public LockedState(Player player) {
-        System.out.println("Locked State");
+        System.out.println("Locked state.State");
         this.player = player;
         player.setPlaying(false);
     }

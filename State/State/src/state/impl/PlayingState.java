@@ -1,9 +1,15 @@
-public class PlayingState implements State{
+package state.impl;
+
+import client.Player;
+import state.State;
+import state.impl.LockedState;
+
+public class PlayingState implements State {
 
     private final Player player;
 
     public PlayingState(Player player) {
-        System.out.println("Playing State");
+        System.out.println("Playing state.State");
         this.player = player;
     }
 

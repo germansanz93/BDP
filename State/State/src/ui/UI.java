@@ -1,3 +1,7 @@
+package ui;
+
+import client.Player;
+
 import javax.swing.*;
 import java.awt.*;
 

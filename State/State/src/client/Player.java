@@ -1,3 +1,8 @@
+package client;
+
+import state.State;
+import state.impl.ReadyState;
+
 import java.util.ArrayList;
 import java.util.List;
 

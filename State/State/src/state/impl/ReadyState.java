@@ -1,11 +1,18 @@
-public class ReadyState implements State{
+package state.impl;
+
+import client.Player;
+import state.State;
+import state.impl.LockedState;
+import state.impl.PlayingState;
+
+public class ReadyState implements State {
     private static final String LOCKED = "Locked...";
 
 
     private Player player;
 
     public ReadyState(Player player){
-        System.out.println("Ready State");
+        System.out.println("Ready state.State");
         this.player = player;
     }
 
