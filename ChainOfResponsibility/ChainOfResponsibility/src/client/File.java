@@ -1,3 +1,5 @@
+package client;
+
 public class File {
     private final String name;
     private final String type;

@@ -1,8 +1,13 @@
+package handler.impl;
+
+import handler.Handler;
+
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import client.File;
 
-public class ImageFileHandler implements Handler{
+public class ImageFileHandler implements Handler {
     private static final String IMG = "img";
     private Handler handler;
     private String handlerName;
@@ -26,7 +31,7 @@ public class ImageFileHandler implements Handler{
             logger.log(Level.INFO, handlerName + " forwards request to " + handler.getHandlerName());
             handler.process(file);
         } else {
-            logger.log(Level.WARNING, "File not supported!");
+            logger.log(Level.WARNING, "client.File not supported!");
         }
     }
 
