@@ -7,13 +7,17 @@ import java.util.List;
 
 public class ProductImpl implements Subject, Product {
     private final List<Observer> observers;
-    private String description;
+    private final String description;
     private BigDecimal price;
 
     public ProductImpl(List<Observer> observers, String description, BigDecimal price) {
         this.observers = observers;
         this.description = description;
         this.price = price;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
     }
 
     @Override
@@ -28,7 +32,7 @@ public class ProductImpl implements Subject, Product {
 
     @Override
     public void notifyObservers() {
-        System.out.println("Notifying observers");
+        System.out.printf("%s updated: Notifying observers\n", description);
         observers.forEach(observer -> observer.update(description, price));
     }
 
