@@ -3,6 +3,9 @@ Este patron de diseño nos permite basicamente desacoplar el codigo que envia un
 Por lo general, el codigo que quiere que una solicitud sea procesada llama a un metodo exacto en un objeto exacto para que la procese. La cadena de responsabilidad soluciona este problema dando a mas de un objeto la chance de procesar el pedido.
 Como efecto secundario de la aplicacion de este patron es que no tenemos la garantia de que finalmente la peticion sea procesada.
 
+## Aplicabilidad
+El patron Chain Of Responsibility es muy util cuando tenemos que procesar distintos tipos de solicitudes de varias maneras, pero los tipos exactos de solicitudes y sus secuencias no se conocen de antemano. Es decir que este patron es util para cuando sea fundamental ejecutar varios manejadores en un orden especifico.
+
 ## Diagrama
 
 ```mermaid
