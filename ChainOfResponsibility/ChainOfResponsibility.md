@@ -4,7 +4,8 @@ Por lo general, el codigo que quiere que una solicitud sea procesada llama a un 
 Como efecto secundario de la aplicacion de este patron es que no tenemos la garantia de que finalmente la peticion sea procesada.
 
 ## Diagrama
-´´´mermaid
+
+```mermaid
 classDiagram
 
 class Client
@@ -24,4 +25,4 @@ ConcreteHandlerB: +handleRequest() void
 
 Handler<|--ConcreteHandlerA
 Handler<|--ConcreteHandlerB
-´´´
+```
