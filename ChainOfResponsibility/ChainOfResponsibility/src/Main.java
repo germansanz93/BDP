@@ -25,7 +25,7 @@ public class Main {
 
         file = new File("Abc.mp3", "audio", "/home/user/audio");
         textHandler.process(file);
-        file = new File("Abc.jpg", "video", "/home/user/video");
+        file = new File("Abc.jpg", "image", "/home/user/image");
         textHandler.process(file);
         file = new File("Abc.doc", "doc", "/home/user/doc");
         textHandler.process(file);

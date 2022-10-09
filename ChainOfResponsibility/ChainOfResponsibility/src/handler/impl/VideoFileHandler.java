@@ -26,12 +26,12 @@ public class VideoFileHandler implements Handler {
     @Override
     public void process(File file) {
         if(file.getType().equals(VIDEO)){
-            logger.log(Level.INFO, "Process and saving video file by {}", handlerName);
+            logger.log(Level.INFO, "Process and saving video file by " + handlerName);
         } else if (Objects.nonNull(handler)){
             logger.log(Level.INFO, handlerName + " forwards request to " + handler.getHandlerName());
             handler.process(file);
         } else {
-            logger.log(Level.WARNING, "client.File not supported!");
+            logger.log(Level.WARNING, "File not supported!");
         }
     }
 

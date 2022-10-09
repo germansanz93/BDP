@@ -26,7 +26,7 @@ public class TextFileHandler implements Handler {
     @Override
     public void process(File file) {
         if(file.getType().equals(TEXT)){
-            logger.log(Level.INFO, "Process and saving text file by {}", handlerName);
+            logger.log(Level.INFO, "Process and saving text file by " + handlerName);
         } else if (Objects.nonNull(handler)){
             logger.log(Level.INFO, handlerName + " forwards request to " + handler.getHandlerName());
             handler.process(file);
