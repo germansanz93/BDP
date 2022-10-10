@@ -31,7 +31,7 @@ public class DocFileHandler implements Handler {
             logger.log(Level.INFO, handlerName + " forwards request to " + handler.getHandlerName());
             handler.process(file);
         } else {
-            logger.log(Level.WARNING, "client.File not supported!");
+            logger.log(Level.WARNING, "File not supported!");
         }
     }
 
