@@ -23,13 +23,13 @@ public class Main {
         audioHandler.setHandler(videoHandler);
         videoHandler.setHandler(imageHandler);
 
-        file = new File("Abc.mp3", "audio", "/home/user/audio");
+//        file = new File("Abc.mp3", "audio", "/home/user/audio");
+//        textHandler.process(file);
+        file = new File("Abc.jpg", "img", "/home/user/image");
         textHandler.process(file);
-        file = new File("Abc.jpg", "image", "/home/user/image");
-        textHandler.process(file);
-        file = new File("Abc.doc", "doc", "/home/user/doc");
-        textHandler.process(file);
-        file = new File("Abc.bat", "bat", "/home/user/bat");
-        textHandler.process(file);
+//        file = new File("Abc.doc", "doc", "/home/user/doc");
+//        textHandler.process(file);
+//        file = new File("Abc.bat", "bat", "/home/user/bat");
+//        textHandler.process(file);
     }
 }
